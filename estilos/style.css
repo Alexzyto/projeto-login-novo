@@ -197,10 +197,14 @@ transition: all 0.3s ease;
 .brand-logo {
     width: 20px;
     height: 20px;
-    transform: translateY(5px);
+    
 }
 
 a#google , a#apple { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     color: aliceblue;
     text-decoration: none;
     width: 115px;

@@ -37,7 +37,7 @@ Grandes Telas: acima de 1200px
     }
 
     section#login > div#formulario > p#jatemconta {
-        transform: translateY(260px);
+        transform: translateY(267px);
         text-align: center;
         margin-right: 25px;
     }
@@ -46,25 +46,24 @@ Grandes Telas: acima de 1200px
         transform: translateY(-50px);
         width: 232px;
         height: 30px;
-        margin-bottom: 6px;
+        margin-bottom: 8px;
     }
 
     label#termo {
         padding-top: 1px;
         transform: translateX(-30px);
-        
         font-size: 12px;
     }
 
     div#campobox {
         padding-top: 10px;
-        transform: translateY(-50px);
+        transform: translateY(-60px);
     }
 
     form > input[type=submit] {
         display: block;
         font-size: 1.2em;
-        height: 30px;
+        height: 35px;
         width: 232px;
     transform: translateY(-60px);
     }
@@ -92,9 +91,14 @@ Grandes Telas: acima de 1200px
     .brand-logo {
         width: 15px;
         height: 15px;
+        transform: translateY(0);
     }
 
     a#google , a#apple {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Se quiser centralizar o texto com imagem */
+        gap: 8px; /* Espaço entre logo e texto */
         transform: translateY(-62px);
         width: 111px;
         height: 32px;
