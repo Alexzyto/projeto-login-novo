@@ -14,13 +14,13 @@ Grandes Telas: acima de 1200px
     /* CONFIGURAÇÃO PARA CELULAR */
     
     section#login {
-        width: 250px;
-        height: 515px;
+        width: 300px;
+        height: 618px;
     }
 
     section#login > div#imagem {
         margin: 12px;
-        height: 30%;
+        height: 37%;
         width: 90%;
     }
     section#login > div#formulario {
@@ -37,26 +37,27 @@ Grandes Telas: acima de 1200px
     }
 
     section#login > div#formulario > p#jatemconta {
-        transform: translateY(247px);
+        transform: translateY(260px);
         text-align: center;
         margin-right: 25px;
     }
 
     div.campo1 > input , div.campo2 > input , div.campo > input  {
         transform: translateY(-50px);
-        width: 186px;
+        width: 232px;
         height: 30px;
         margin-bottom: 6px;
     }
 
     label#termo {
-        transform: translateY(-19px);
-        padding-bottom: 0px;
-        padding-left: 20px;
+        padding-top: 1px;
+        transform: translateX(-30px);
+        
         font-size: 12px;
     }
 
     div#campobox {
+        padding-top: 10px;
         transform: translateY(-50px);
     }
 
@@ -64,29 +65,28 @@ Grandes Telas: acima de 1200px
         display: block;
         font-size: 1.2em;
         height: 30px;
-        width: 186px;
+        width: 232px;
     transform: translateY(-60px);
     }
 
-    div.divider {
+    .divider {
         transform: translateY(-60px);
-        font-size: 11px;
+        font-size: 13px;
         padding-right: 25px;
         
-
     }
 
     .divider::before {
         left: 0;
         transform: translateY(0px);
         padding-left: 40px;
-        width: 1%;
+        width: 8%;
     }
 
     .divider::after {
         right: 0;
         padding-left: 40px;
-        width: 1%;
+        width: 8%;
     }
 
     .brand-logo {
@@ -96,7 +96,7 @@ Grandes Telas: acima de 1200px
 
     a#google , a#apple {
         transform: translateY(-62px);
-        width: 86px;
+        width: 111px;
         height: 32px;
     }
 
