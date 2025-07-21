@@ -10,7 +10,7 @@ Desktop: de 992px até 1200px
 Grandes Telas: acima de 1200px
 */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     /* CONFIGURAÇÃO PARA CELULAR */
     
     section#login {
