@@ -62,7 +62,7 @@ section#login > div#formulario > h1 {
 }
 
 section#login > div#formulario > p#jatemconta {
-    font-size: 13px;
+    font-size: 14px;
     color: rgb(203, 206, 209);
     transform: translateY(-30px);
 }
@@ -84,7 +84,7 @@ label {
     display: none;
 }
 
-div.campo1 > input {
+div.campo1 > input , div.campo2 > input {
     background-color: #4e475e;
     display: block;
     font-size: 1em;
@@ -97,18 +97,12 @@ div.campo1 > input {
     float: left; /* Para que os campos fiquem lado a lado */
 }
 
-div.campo2 > input {
-    background-color: #4e475e;
-    display: block;
-    font-size: 1em;
-    width: 115px;
-    height: 37px;
-    border: 0px;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 14px;
-    transform: translateX(10px);
+div.campo1 > input {
     float: left; /* Para que os campos fiquem lado a lado */
+}
+
+div.campo2 > input {
+    transform: translateX(10px);
 }
 
 div.campo > input {

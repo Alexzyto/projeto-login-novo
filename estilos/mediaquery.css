@@ -113,3 +113,111 @@ Grandes Telas: acima de 1200px
         transform: translateY(-65px);
     }
 }
+
+@media screen and (min-width: 992px) {
+    /* CONFIGURAÇÃO PARA DESKTOP */
+
+    section#login {
+        width: 950px;
+        height: 600px;
+    }
+
+    section#login > div#imagem {
+        margin: 12px;
+        height: 96%;
+        width: 50%;
+
+        float: right;
+    }
+    
+    section#login > div#formulario {
+    transform: translate(5%,10%);
+    padding-top: 40px;
+    padding-left: 20px;
+    display: block;
+    }
+
+    section#login > div#formulario > h1 {
+        font-size: 50px;
+        transform: translateY(-42px);
+    }
+
+    section#login > div#formulario > p#jatemconta {
+        font-size: 16px;
+        color: rgb(203, 206, 209);
+        transform: translateY(-30px);
+    }
+
+    div.campo1 > input , div.campo2 > input {
+        width: 155px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    div.campo > input {
+    width: 320px;
+    height: 40px;
+    margin-bottom: 20px;
+    }
+
+    label#termo {
+    font-size: 14px;
+    color: rgb(203, 206, 209);
+    transform: translateX(-167px);
+    display: block;
+    float: right;
+    padding-bottom: 25px;
+    }
+
+    form > input[type=submit] {
+        
+        font-size: 1.4em;
+        height: 45px;
+        width: 320px;
+    }
+
+    .divider {
+        font-size: 15px;
+        transform: translateX(-55px);
+        
+    }
+    
+    .divider::before {
+        left: 0;
+        transform: translateY(0px);
+        margin-left: 56px;
+        padding-left: 40px;
+        width: 6.2%;
+    }
+
+    .divider::after {
+        right: 0;
+        padding-left: 40px;
+        width: 6.2%;
+        transform: translateX(-506px);
+    }
+    
+    .brand-logo {
+        width: 30px;
+        height: 30px;
+        transform: translateY(0);
+    }
+    
+      a#google , a#apple {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Se quiser centralizar o texto com imagem */
+        gap: 8px; 
+        width: 155px;
+        height: 45px;  
+    }
+    
+    a#apple {
+        margin-left: 60px;
+        float: left;
+    }
+    
+    a#google:hover {
+        transform: translateY(-3px); 
+    } */
+}
