@@ -73,6 +73,9 @@ a#facalogin , a#termos {
     padding: 7px; /* Ajusta o padding para melhor espaçamento */
 }
 
+p > a#facalogin:hover {
+    text-decoration: underline;
+}
 p > a:hover {
     text-decoration: underline;
 }
