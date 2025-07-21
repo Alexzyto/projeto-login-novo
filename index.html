@@ -15,9 +15,18 @@
 
             <div id="formulario">
                 <h1>Crie uma Conta</h1>
-                <p>Já tem uma conta? <a href="conta.html">Login</a></p>
+                <p>Já tem uma conta? <a href="conta.html">Faça Login</a></p>
 
                 <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <input type="text" name="nome" id="inome" placeholder="Nome" autocomplete="name" maxlength="30">
+                        <label for="inome">Nome</label>
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome">
+                        <label for="inome">Nome</label>
+                    </div>
+
                     <div class="campo">
                         <input type="email" name="login" id="ilogin" placeholder="Email" autocomplete="email" maxlength="35">
                         <label for="ilogin">Login</label>
@@ -27,6 +36,10 @@
                         <label for="isenha">Senha</label>
                     </div>
 
+                    <input type="submit" value="Criar Conta">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha
+                    </a>
                 </form>
 
             </div>
