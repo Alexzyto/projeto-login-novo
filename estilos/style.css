@@ -7,13 +7,6 @@
     box-sizing: border-box;
 }
 
-img.top-image {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
-}
-
 body, html {
     background-image: linear-gradient(to top, #32264b88, #4c266898);
     color: white;
