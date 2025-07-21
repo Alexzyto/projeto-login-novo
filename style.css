@@ -188,17 +188,30 @@ section#login > div#formulario > p#naotemconta {
 
 article {
     padding-top: 10px;
-    
+}
+
+.brand-link {
+transition: all 0.3s ease;
+}
+
+.brand-link:hover {
+   box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);
+}
+
+.brand-logo {
+    width: 20px;
+    height: 20px;
+    transform: translateY(5px);
+    margin: px;
 }
 
 a#google , a#apple { 
-    display: block;
     color: aliceblue;
     text-decoration: none;
     width: 115px;
     height: 37px;
     border-radius: 5px;
-    padding: 8px;
+    padding: 2px;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.644);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.253);
@@ -211,4 +224,13 @@ a#google {
 a#apple {
     transform: translateX(-52px);
     float: right; /* Para que os campos fiquem lado a lado */
+}
+
+a#google:hover {
+    transform: translateY(-2px);
+}
+
+a#apple:hover {
+    transform: translateY(-2px)
+    translateX(-52px)
 }
