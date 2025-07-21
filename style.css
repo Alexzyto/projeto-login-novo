@@ -25,8 +25,8 @@ section#login {
     overflow: hidden;
 
     background-image: linear-gradient(45deg, #301f3d98, #2a233b );
-    width: 650px;
-    height: 430px;
+    width: 800px;
+    height: 530px;
     border-radius: 20px;
     box-shadow: 1px 10px 50px rgba(0, 0, 0, 0.747);
 
@@ -43,7 +43,7 @@ section#login > div#imagem {
     background-size: cover;
     background-position: center;
     float: left;
-    width: 45%;
+    width: 50%;
     height: 91%;
     margin: 17px;
     border-radius: 10px;
@@ -67,10 +67,14 @@ section#login > div#formulario > p {
     transform: translateY(-30px);
 }
 
-section#login > div#formulario > p > a {
+a {
     text-decoration: none;
     color: #c09adb;
-    padding: 10px; /* Ajusta o padding para melhor espaçamento */
+    padding: 7px; /* Ajusta o padding para melhor espaçamento */
+}
+
+p > a:hover {
+    text-decoration: underline;
 }
 
 /* form > div.campo {
@@ -82,8 +86,35 @@ section#login > div#formulario > p > a {
     margin: 5px 0px;
 }
 */ 
-div.campo > label {
+label {
     display: none;
+}
+
+div.campo1 > input {
+    background-color: #4e475e;
+    display: block;
+    font-size: 1em;
+    width: 115px;
+    height: 37px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 14px;
+    float: left; /* Para que os campos fiquem lado a lado */
+}
+
+div.campo2 > input {
+    background-color: #4e475e;
+    display: block;
+    font-size: 1em;
+    width: 115px;
+    height: 37px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 14px;
+    transform: translateX(10px);
+    float: left; /* Para que os campos fiquem lado a lado */
 }
 
 div.campo > input {
@@ -99,13 +130,26 @@ div.campo > input {
     margin-bottom: 14px;
 }
 
+label#termo {
+    font-size: 13px;
+    color: rgb(203, 206, 209);
+    transform: translateX(-70px);
+    display: block;
+    float: right;
+    padding-bottom: 25px;
+}
+
+label#termo > a:hover {
+    text-decoration: underline;
+}
+
 form > input[type=submit] {
-    padding: 12px;
     padding-left: 50px;
     padding-right: 50px;
     display: block;
     font-size: 1.2em;
     height: 40px;
+    width: 240px;
     background-color: #6E56B3;
     color: white;
     border: none;
@@ -122,14 +166,16 @@ form > a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
-    width: 100%;
-    height: 40px;
+    width: 240px;
+    height: 37px;
     padding-top: 5px;
     margin-top: 5px;
     background-color: white;
     color: #4e475e;
     border-radius: 7px;
     text-decoration: none;
+    display: block;
+    transform: translateY(-30px);
 }
 
 form >a.botao:hover {
