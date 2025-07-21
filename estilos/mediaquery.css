@@ -1,1 +1,111 @@
-@charset "UTF-8"
+@charset "UTF-8";
+
+/* Todas as demais mídeas
+
+ Typical Device breakpoints (2024)
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media screen and (max-width: 768px) {
+    /* CONFIGURAÇÃO PARA CELULAR */
+    
+    section#login {
+        width: 250px;
+        height: 515px;
+    }
+
+    section#login > div#imagem {
+        margin: 12px;
+        height: 30%;
+        width: 90%;
+    }
+    section#login > div#formulario {
+        transform: translate(5%,7%);
+        padding: 20px;
+        display: block;
+    }
+
+    section#login > div#formulario > h1 {
+        font-size: 24px;
+        transform: translateY(-42px);
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    section#login > div#formulario > p#jatemconta {
+        transform: translateY(247px);
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    div.campo1 > input , div.campo2 > input , div.campo > input  {
+        transform: translateY(-50px);
+        width: 186px;
+        height: 30px;
+        margin-bottom: 6px;
+    }
+
+    label#termo {
+        transform: translateY(-19px);
+        padding-bottom: 0px;
+        padding-left: 20px;
+        font-size: 12px;
+    }
+
+    div#campobox {
+        transform: translateY(-50px);
+    }
+
+    form > input[type=submit] {
+        display: block;
+        font-size: 1.2em;
+        height: 30px;
+        width: 186px;
+    transform: translateY(-60px);
+    }
+
+    div.divider {
+        transform: translateY(-60px);
+        font-size: 11px;
+        padding-right: 25px;
+        
+
+    }
+
+    .divider::before {
+        left: 0;
+        transform: translateY(0px);
+        padding-left: 40px;
+        width: 1%;
+    }
+
+    .divider::after {
+        right: 0;
+        padding-left: 40px;
+        width: 1%;
+    }
+
+    .brand-logo {
+        width: 15px;
+        height: 15px;
+    }
+
+    a#google , a#apple {
+        transform: translateY(-62px);
+        width: 86px;
+        height: 32px;
+    }
+
+    a#apple {
+        margin-left: 10px;
+        float: left;
+    }
+
+    a#google:hover , a#apple:hover  {
+        transform: translateY(-65px);
+    }
+}
