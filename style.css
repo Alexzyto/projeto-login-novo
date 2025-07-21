@@ -8,7 +8,7 @@
 }
 
 body, html {
-    background-image: linear-gradient(to top, #3e325888, #60357e98);
+    background-image: linear-gradient(to top, #32264b88, #4c266898);
     color: white;
 }
 
@@ -43,8 +43,8 @@ section#login > div#imagem {
     background-size: cover;
     background-position: center;
     float: left;
-    width: 50%;
-    height: 91%;
+    width: 53%;
+    height: 94%;
     margin: 17px;
     border-radius: 10px;
 
@@ -67,7 +67,7 @@ section#login > div#formulario > p#jatemconta {
     transform: translateY(-30px);
 }
 
-a {
+a#facalogin , a#termos {
     text-decoration: none;
     color: #c09adb;
     padding: 7px; /* Ajusta o padding para melhor espaçamento */
@@ -77,15 +77,6 @@ p > a:hover {
     text-decoration: underline;
 }
 
-/* form > div.campo {
-    background-color: #4e475e;
-    display: block;
-    transform: translateX(-30px);
-    height: 40px;
-    border-radius: 8px;
-    margin: 5px 0px;
-}
-*/ 
 label {
     display: none;
 }
@@ -133,7 +124,7 @@ div.campo > input {
 label#termo {
     font-size: 13px;
     color: rgb(203, 206, 209);
-    transform: translateX(-70px);
+    transform: translateX(-47px);
     display: block;
     float: right;
     padding-bottom: 25px;
@@ -169,3 +160,55 @@ section#login > div#formulario > p#naotemconta {
     padding-top: 10px;
 }
 
+.divider {
+    color: #c0c0c0;
+    transform: translateX(-28px);
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    font-size: 0.8em;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9%;
+    height: 1px;
+    background: #c0c0c0;
+}
+.divider::before {
+    left: 0;
+    transform: translateX(437px);
+}
+.divider::after {
+    right: 0;
+    transform: translateX(-27px);
+}
+
+article {
+    padding-top: 10px;
+    
+}
+
+a#google , a#apple { 
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    width: 115px;
+    height: 37px;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.644);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.253);
+}
+
+a#google {
+    float: left; /* Para que os campos fiquem lado a lado */
+}
+
+a#apple {
+    transform: translateX(-52px);
+    float: right; /* Para que os campos fiquem lado a lado */
+}

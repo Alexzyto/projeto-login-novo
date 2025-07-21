@@ -15,7 +15,7 @@
 
             <div id="formulario">
                 <h1>Crie uma Conta</h1>
-                <p id="jatemconta">Já tem uma conta? <a href="conta.html">Faça Login</a></p>
+                <p id="jatemconta">Já tem uma conta? <a id="facalogin" href="conta.html">Faça Login</a></p>
 
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo1">
@@ -37,17 +37,17 @@
                     </div>
                     <div id="campo">
                         <input type="checkbox" name="caixa" id="icaixa">
-                        <label for="icaixa" id="termo">Eu concordo com os <a href="#">Termos e Condições</a> </label>
+                        <label for="icaixa" id="termo">Eu concordo com os <a id="termos" href="#">Termos e Condições</a> </label>
                     </div>
                     <input type="submit" value="Criar Conta">
                 </form>
 
-                <p id="naotemconta">------------ ou registre com ------------</p>
+                <div class="divider">ou registre-se com</div>
 
                 
                 <article>
-                    <section id="google"><a href="#">Google</a> </section>
-                    <section id="apple"><a href="#">Apple</a> </section>
+                    <a id="google" href="#">Google</a>
+                    <a id="apple" href="#">Apple</a> 
                 </article>
             </div>
 
