@@ -37,7 +37,7 @@ section#login {
 
 section#login > div#imagem {
     display: block;
-    background: #2B2738 url(imagens/mount-fuji-minimal-art-4k_1708620198.jpg) no-repeat;
+    background: #2B2738 url(../imagens/mount-fuji-minimal-art-4k_1708620198.jpg) no-repeat;
     height: 200px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
     background-size: cover;
