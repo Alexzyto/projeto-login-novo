@@ -15,7 +15,7 @@
 
             <div id="formulario">
                 <h1>Crie uma Conta</h1>
-                <p>Já tem uma conta? <a href="conta.html">Faça Login</a></p>
+                <p id="jatemconta">Já tem uma conta? <a href="conta.html">Faça Login</a></p>
 
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo1">
@@ -40,11 +40,15 @@
                         <label for="icaixa" id="termo">Eu concordo com os <a href="#">Termos e Condições</a> </label>
                     </div>
                     <input type="submit" value="Criar Conta">
-                    <a href="esqueci.html" class="botao">
-                        Esqueci a senha
-                    </a>
                 </form>
 
+                <p id="naotemconta">------------ ou registre com ------------</p>
+
+                
+                <article>
+                    <section id="google"><a href="#">Google</a> </section>
+                    <section id="apple"><a href="#">Apple</a> </section>
+                </article>
             </div>
 
         </section>

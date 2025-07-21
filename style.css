@@ -61,7 +61,7 @@ section#login > div#formulario > h1 {
     transform: translateY(-42px);
 }
 
-section#login > div#formulario > p {
+section#login > div#formulario > p#jatemconta {
     font-size: 13px;
     color: rgb(203, 206, 209);
     transform: translateY(-30px);
@@ -162,27 +162,10 @@ form > input[type=submit]:hover {
     background-color: #5a4792;
 }
 
-form > a.botao {
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    width: 240px;
-    height: 37px;
-    padding-top: 5px;
-    margin-top: 5px;
-    background-color: white;
-    color: #4e475e;
-    border-radius: 7px;
-    text-decoration: none;
-    display: block;
-    transform: translateY(-30px);
+section#login > div#formulario > p#naotemconta {
+    font-size: 13px;
+    color: rgb(203, 206, 209);
+    transform: translateX(30px);
+    padding-top: 10px;
 }
 
-form >a.botao:hover {
-    background-color: #9df0ed;
-    color: rgb(15, 44, 43);
-}
-
-form >a.botao > i {
-    font-size: 0.8em;
-}
