@@ -118,13 +118,21 @@ div.campo > input {
     margin-bottom: 14px;
 }
 
+#campobox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
 label#termo {
     font-size: 13px;
     color: rgb(203, 206, 209);
     transform: translateX(-47px);
-    display: block;
-    float: right;
-    padding-bottom: 25px;
+    display: inline;
+    float: none;
+    transform: none;
 }
 
 label#termo > a:hover {
