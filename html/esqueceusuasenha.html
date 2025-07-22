@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu sua senha</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/mediaquery.css">
+</head>
+<style>
+    
+    section#login > div#imagem {
+    background: #2B2738 url(../imagens/mountain-minimal-4k.jpg) no-repeat;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    background-size: cover;
+    background-position: center;
+    width: 96%;
+    height: 46%;
+    margin: 17px;
+    margin-top: 0px;
+    border-radius: 10px;
+    transform: translateY(-210px);
+    }
+
+    section#login > div#imagem:hover {
+        transform: translateY(-213px);
+    }
+    p#emailsenha {
+    font-size: 43px;
+    color: rgb(203, 206, 209);
+    padding-left: 50%;
+    padding-right: 10%;
+    transform: translateY(-160px);
+    }
+
+    h1#emailsenha {
+    font-size: 20px;
+    color: rgb(203, 206, 209);
+    padding-right: 50%;
+    }
+    div.campo {
+        transform: translateY(-240px);
+    }
+    div.campo > input {
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-bottom: 14px;
+}
+
+    form > input[type=submit] {
+    transform: translateY(-230px);
+}
+
+@media screen and (max-width: 768px) {
+    h1#emailsenha {
+        font-size: 28px !important;
+        text-align: center;
+    }
+
+    section#login > div#formulario {
+        transform: translate(5%,10%);    
+    }
+    section#login > div#imagem {
+        width: 90%;
+        height: 52%;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 17px;
+        transform: translateY(20px);
+    }
+
+    section#login > div#imagem:hover {
+        transform: translateY(17px);
+    }
+
+    h1#emailsenha {
+        padding-top: 35px;
+        padding-left: 10%;
+        padding-right: 10%;
+    } 
+
+    p#emailsenha {
+        text-align: center;
+        font-size: 16px;
+        padding-left: 0%;
+        padding-right: 8%;
+        transform: translateY(-40px);
+    }   
+    
+    div.campo {
+        transform: translateY(40px);
+        padding-top: 10px;
+    }
+    div.campo > input {
+        font-size: 1em;
+        border-radius: 5px;
+        margin-bottom: 14px;
+        height: 35px;
+    }
+
+    form > input[type=submit] {
+        transform: translateY(-15px);
+        width: 242px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section#login > div#formulario {
+    transform: translate(5%,10%);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+    
+}
+    section#login > div#imagem {
+    width: 96%;
+    height: 47%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 17px;
+    transform: translateY(-210px);
+    }
+
+    section#login > div#imagem:hover {
+        transform: translateY(-213px);
+    }
+    p#emailsenha {
+    font-size: 40px;
+    color: rgb(203, 206, 209);
+    padding-left: 50%;
+    padding-right: 8%;
+    transform: translateY(-140px);
+    }
+
+    h1#emailsenha {
+    font-size: 20px;
+    color: rgb(203, 206, 209);
+    padding-right: 50%;
+    
+    }
+    div.campo {
+        transform: translateY(-240px);
+        padding-top: 10px;
+    }
+    div.campo > input {
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-bottom: 14px;
+}
+
+    form > input[type=submit] {
+    transform: translateY(-230px);
+}
+}
+</style>
+<body>
+    <main>
+        <section id="login">
+            
+            <div id="formulario">
+                
+                <h1 id="emailsenha">Recuperação de senha</h1>
+                <p id="emailsenha">
+                    Você receberá um e-mail com um link para redefinir sua senha
+                    </p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <input type="email" name="login" id="ilogin" placeholder="Email" autocomplete="email" maxlength="35">
+                        <label for="ilogin">Email</label>
+                    </div>
+                    </p>
+                    <input type="submit" value="Enviar">
+                </form>
+                </a> 
+                </article>
+            </div>
+            <div id="imagem">
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
