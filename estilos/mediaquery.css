@@ -122,6 +122,16 @@ Grandes Telas: acima de 1200px
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    div.campo {
+            transform: translateY(-36px);
+        }
+
+    p#esqueceusuasenha {
+    transform: translateY(-40px);
+        }
+}
+
 @media screen and (min-width: 992px) {
     /* CONFIGURAÇÃO PARA DESKTOP */
 
@@ -161,6 +171,14 @@ Grandes Telas: acima de 1200px
         height: 40px;
         margin-bottom: 20px;
     }
+
+    div.campo {
+            transform: translateY(-36px);
+        }
+
+    p#esqueceusuasenha {
+    transform: translateY(-40px);
+        }
 
     div.campo > input {
         width: 320px;

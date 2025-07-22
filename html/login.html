@@ -17,19 +17,18 @@
             transform: translateY(120px);
         }
 
-    form > input[type=submit] {
-    transform: translateY(-80px);
-        }
-
         form > input[type=submit] {
             height: 40px;
             margin-top: 40px;
+            transform: translateY(-80px);
         }
         
         }
 
+        
         div.campo > input {
             height: 40px;
+            
         }
         article {
             padding-top: 20px;
@@ -41,13 +40,14 @@
             font-size: 18px;
             padding: 2px;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.644);
+            border: 1px outset rgba(255, 255, 255, 0.644);
             box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.253);
         }
         section#login > div#formulario > h1 {
             
             padding-bottom: 20px;
         }
+        /* MUDAR CODIGO ABAIXO */
         section#login > div#formulario > p#esqueceusuasenha {
             transform: translateY(130px);
         }
@@ -66,7 +66,7 @@
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
                         <input type="email" name="login" id="ilogin" placeholder="Email" autocomplete="email" maxlength="35">
-                        <label for="ilogin">Login</label>
+                        <label for="ilogin">Email</label>
                     </div>
                     <div class="campo">
                         <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20">

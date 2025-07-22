@@ -228,7 +228,7 @@ a#google , a#apple {
     border-radius: 5px;
     padding: 2px;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.644);
+    border: 1px outset rgba(255, 255, 255, 0.644);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.253);
 }
 
