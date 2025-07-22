@@ -114,7 +114,7 @@ div.campo1 > input {
 }
 
 div.campo2 > input {
-    transform: translateX(10px);
+    transform: translateX(0px);
 }
 
 div.campo > input {
