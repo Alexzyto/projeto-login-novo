@@ -278,7 +278,11 @@ a#voltar:hover {
     text-decoration: underline;
 }
 
-*:focus {
-    color: white; /* Altere para a cor que desejar */
-    outline: none;
+input {
+  color: white;           /* cor do texto sempre branca */
+  background-color: #4e475e; /* ou sua cor de fundo desejada */
+}
+
+input:focus {
+  outline: none;          /* se quiser remover o contorno azul */
 }
