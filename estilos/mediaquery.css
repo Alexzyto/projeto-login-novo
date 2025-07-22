@@ -31,19 +31,20 @@ Grandes Telas: acima de 1200px
 
     section#login > div#formulario > h1 {
         font-size: 24px;
-        transform: translateY(-42px);
+        transform: translateY(-47px);
         text-align: center;
+        padding-bottom: 5px;
         margin-right: 28px;
     }
 
     section#login > div#formulario > p#jatemconta {
-        transform: translateY(267px);
+        transform: translateY(257px);
         text-align: center;
         margin-right: 25px;
     }
 
     div.campo1 > input , div.campo2 > input , div.campo > input  {
-        transform: translateY(-50px);
+        transform: translateY(-60px);
         width: 242px;
         height: 30px;
         margin-bottom: 8px;
@@ -56,8 +57,6 @@ Grandes Telas: acima de 1200px
         float: none;
         transform: none;
         padding: 5px;
-        padding-top: 10px;
-        padding-bottom: 10px;
     }
 
     div#campobox {

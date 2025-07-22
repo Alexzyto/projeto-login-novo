@@ -61,10 +61,22 @@ section#login > div#formulario > h1 {
     transform: translateY(-42px);
 }
 
-section#login > div#formulario > p#jatemconta {
+section#login > div#formulario > p#esqueceusuasenha {
+
+}
+section#login > div#formulario > p#jatemconta  {
     font-size: 14px;
     color: rgb(203, 206, 209);
-    transform: translateY(-30px);
+    margin-bottom: 15px;
+    transform: translateY(-15px);
+    height: 0px;
+}
+
+section#login > div#formulario > p#aindanaotemconta {
+    font-size: 14px;
+    color: rgb(203, 206, 209);
+    transform: translateY(30px);
+    height: 0px;
 }
 
 a#facalogin , a#termos {
@@ -76,7 +88,7 @@ a#facalogin , a#termos {
 p > a#facalogin:hover {
     text-decoration: underline;
 }
-p > a:hover {
+a:hover , a#termos:hover {
     text-decoration: underline;
 }
 
