@@ -36,6 +36,7 @@ Grandes Telas: acima de 1200px
         text-align: center;
         padding-bottom: 5px;
         margin-right: 28px;
+
     }
 
     section#login > div#formulario > p#jatemconta {
@@ -125,6 +126,17 @@ Grandes Telas: acima de 1200px
     a#google:hover , a#apple:hover  {
         transform: translateY(-65px);
     }
+    
+    
+    
+
+    a#voltar {
+        position: relative;
+        z-index: 10;
+        display: block;
+        transform: translateY(-20px);
+        
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -135,6 +147,14 @@ Grandes Telas: acima de 1200px
     p#esqueceusuasenha {
     transform: translateY(-40px);
         }
+
+    a#voltar {
+        position: relative;
+        z-index: 10;
+        display: block;
+        transform: translateY(-50px);
+        
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -258,5 +278,13 @@ Grandes Telas: acima de 1200px
     
     a#google:hover {
         transform: translateY(-3px); 
-    } */
+    } 
+
+    a#voltar {
+        position: relative;
+        z-index: 10;
+        display: block;
+        transform: translateY(-50px);
+        
+    }
 }

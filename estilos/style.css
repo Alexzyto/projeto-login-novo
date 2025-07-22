@@ -262,3 +262,13 @@ a#apple:hover {
     transform: translateY(-2px)
     translateX(-52px)
 }
+
+a#voltar {
+    color: #c09adb;
+    text-decoration: none;
+    font-size: 14px;    
+}
+
+a#voltar:hover {
+    text-decoration: underline;
+}
