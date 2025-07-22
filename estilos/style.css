@@ -278,6 +278,10 @@ a#voltar:hover {
     text-decoration: underline;
 }
 
+*:focus {
+  outline: none;
+}
+
 input:focus {
   color: white;
   background-color: #2e1e4d; /* roxo escuro, por exemplo */
