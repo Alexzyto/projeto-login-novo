@@ -43,6 +43,10 @@ Grandes Telas: acima de 1200px
         margin-right: 25px;
     }
 
+    div.campo2 > input {
+        margin-left: 0px; /* ajuste o valor como preferir */
+    }
+
     div.campo1 > input , div.campo2 > input , div.campo > input  {
         transform: translateY(-60px);
         width: 242px;

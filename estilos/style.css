@@ -114,7 +114,7 @@ div.campo1 > input {
 }
 
 div.campo2 > input {
-    transform: translateX(0px);
+    margin-left: 12px; /* ajuste o valor como preferir */
 }
 
 div.campo > input {
@@ -249,3 +249,11 @@ a#apple:hover {
     transform: translateY(-2px)
     translateX(-52px)
 }
+
+
+
+
+
+
+
+
