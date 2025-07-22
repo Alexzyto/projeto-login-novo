@@ -279,5 +279,6 @@ a#voltar:hover {
 }
 
 *:focus {
-  outline: none;
+    color: white; /* Altere para a cor que desejar */
+    outline: none;
 }
