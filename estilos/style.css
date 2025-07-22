@@ -55,7 +55,7 @@ section#login > div#imagem {
 }
 
 section#login > div#imagem:hover {
-    transform: translateY(-3px) scale(1.01);
+    transform: scale(1.01);
 }
 
 section#login > div#formulario {
@@ -73,6 +73,7 @@ section#login > div#formulario > h1 {
 p#esqueceusuasenha {
     transform: translateX(-8px);
 }
+
 section#login > div#formulario > p#jatemconta  {
     font-size: 14px;
     color: rgb(203, 206, 209);
@@ -97,6 +98,7 @@ a#facalogin , a#termos {
 p > a#facalogin:hover {
     text-decoration: underline;
 }
+
 a:hover , a#termos:hover {
     text-decoration: underline;
 }
