@@ -9,14 +9,23 @@
     <style>
         @media screen and (max-width: 768px) {
     /* CONFIGURAÇÃO PARA CELULAR */        
+            p#esqueceusuasenha {
+    transform: translateY(-60px);
+        }
 
-        
+        p#aindanaotemconta {
+            transform: translateY(120px);
+        }
 
+    form > input[type=submit] {
+    transform: translateY(-80px);
         }
 
         form > input[type=submit] {
             height: 40px;
             margin-top: 40px;
+        }
+        
         }
 
         div.campo > input {
@@ -70,7 +79,7 @@
                     <p id="aindanaotemconta">
                     Ainda não tem uma conta? <a id="termos" href="registrar.html">Cadastre-se</a>
                     </p>
-                    
+
                     <input type="submit" value="Entrar">
                 </form>
 
