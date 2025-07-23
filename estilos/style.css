@@ -107,11 +107,15 @@ label {
     display: none;
 }
 
+
 input[type="text"] {
     position: relative;
     z-index: 10;
 }
 
+input:focus {
+  outline: none;          /* se quiser remover o contorno azul */
+}
 div.campo1 > input , div.campo2 > input {
     background-color: #4e475e;
     display: block;
@@ -278,10 +282,6 @@ a#voltar {
 
 a#voltar:hover {
     text-decoration: underline;
-}
-
-input:focus {
-  outline: none;          /* se quiser remover o contorno azul */
 }
 
 /* Corrige o autofill do navegador (especialmente no Chrome) */
