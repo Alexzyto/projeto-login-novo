@@ -8,10 +8,9 @@
 }
 
 body, html {
-    background: url(../imagens/img.jpg);
+    background: #4c266898 url(../imagens/img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
      /* background-image: linear-gradient(to top, #32264b88, #4c266898); */
     color: white;
 }

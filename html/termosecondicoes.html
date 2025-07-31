@@ -13,6 +13,7 @@
 
     }
     .container {
+      
         width: 800px;
         min-height: 500px;
         margin: auto;
@@ -29,8 +30,8 @@
     }
 
     .content {
-        max-height: 400px;
-        background-color: #4e475e;
+        max-height: 410px;
+        background-color: #6d56b3b9;
         padding: 20px;
         border-radius: 10px;
         line-height: 1.6;
@@ -45,7 +46,7 @@
 
     .voltar a {
         text-decoration: none;
-        background-color: #6E56B3;
+        background-color: #6d56b3b7;
         color: white;
         padding: 10px 20px;
         border-radius: 10px;
@@ -57,7 +58,12 @@
         background-color: #5a4792;
         transform: translateY(-3px) scale(1.05); /* Aqui sim! */
     }
-
+    @media screen and (max-width: 768px) {
+    /* CONFIGURAÇÃO PARA CELULAR */
+    .content {
+      overflow-y: auto; /* ❗ Isso ativa o scroll interno */
+    }
+    
     ::-webkit-scrollbar {
         width: 8px;
     }
@@ -67,7 +73,7 @@
         border-radius: 4px;
     }
 
-
+  }
   
   </style>
 </head>
