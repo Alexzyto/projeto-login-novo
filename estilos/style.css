@@ -27,7 +27,8 @@ section#login {
     left: 50%;
     overflow: hidden;
 
-    background-image: linear-gradient(45deg, #261633e5, #2a233bd8 );
+    background-image: linear-gradient(45deg, #261633a2, #2a233ba1 );
+    backdrop-filter: blur(10px);
     width: 800px;
     height: 530px;
     border-radius: 20px;
@@ -120,7 +121,7 @@ input:focus {
   outline: none;          /* se quiser remover o contorno azul */
 }
 div.campo1 > input , div.campo2 > input {
-    background-color: #4e475ea9;
+    background-color: #3003633a;
     display: block;
     font-size: 1em;
     width: 115px;
@@ -135,15 +136,17 @@ div.campo1 > input , div.campo2 > input {
 div.campo1 > input {
     float: left; /* Para que os campos fiquem lado a lado */
     color: white;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 div.campo2 > input {
     margin-left: 12px; /* ajuste o valor como preferir */
     color: white;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 div.campo > input {
-    background-color: #4e475ea9;
+    background-color: #3003633a;
     display: block;
     
     font-size: 1em;
@@ -154,6 +157,12 @@ div.campo > input {
     padding: 10px;
     margin-bottom: 14px;
     color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+    font-weight: 200;
 }
 
 #campobox {
