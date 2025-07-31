@@ -8,7 +8,11 @@
 }
 
 body, html {
-    background-image: linear-gradient(to top, #32264b88, #4c266898);
+    background: url(../imagens/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+     /* background-image: linear-gradient(to top, #32264b88, #4c266898); */
     color: white;
 }
 
@@ -24,7 +28,7 @@ section#login {
     left: 50%;
     overflow: hidden;
 
-    background-image: linear-gradient(45deg, #301f3d98, #2a233b );
+    background-image: linear-gradient(45deg, #261633e5, #2a233bd8 );
     width: 800px;
     height: 530px;
     border-radius: 20px;
@@ -117,7 +121,7 @@ input:focus {
   outline: none;          /* se quiser remover o contorno azul */
 }
 div.campo1 > input , div.campo2 > input {
-    background-color: #4e475e;
+    background-color: #4e475ea9;
     display: block;
     font-size: 1em;
     width: 115px;
@@ -140,7 +144,7 @@ div.campo2 > input {
 }
 
 div.campo > input {
-    background-color: #4e475e;
+    background-color: #4e475ea9;
     display: block;
     
     font-size: 1em;
