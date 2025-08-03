@@ -176,7 +176,11 @@ input::placeholder {
     align-items: center;
     gap: 8px;
     margin-bottom: 25px;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+}
+
+#icaixa {
+  accent-color: #c68beb; /* Magenta/Roxo — troque se quiser outro tom */
 }
 
 label#termo {
