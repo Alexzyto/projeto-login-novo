@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="campo">
-                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20">
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20"  >
                         <label for="isenha">Senha</label>
                     </div>
 
@@ -54,10 +54,6 @@
                         <input type="checkbox" name="caixa" id="icaixa">
                         <label for="icaixa" id="termo">Eu concordo com os <a id="termos" href="termosecondicoes.html">Termos e Condições</a> </label>
                     </div>
-
-                    <p id="mensagem-erro" style="color: red; display: none;">
-                        Por favor, aceite os Termos e Condições.
-                    </p>
 
                     <input type="submit" value="Criar Conta" id="botaoCriar" disabled>
 
@@ -84,22 +80,8 @@
 <script>
     const checkbox = document.getElementById('icaixa');
     const botao = document.getElementById('botaoCriar');
-    const form = document.getElementById('formulario');
-    const mensagemErro = document.getElementById('mensagem-erro');
 
-    // Ativa/desativa o botão
-    checkbox.addEventListener('change', function () {
+    checkbox.addEventListener('change', function() {
         botao.disabled = !this.checked;
-        if (this.checked) {
-            mensagemErro.style.display = 'none';
-        }
-    });
-
-    // Verifica antes de enviar
-    form.addEventListener('submit', function (e) {
-        if (!checkbox.checked) {
-            e.preventDefault();
-            mensagemErro.style.display = 'block';
-        }
     });
 </script>

@@ -166,6 +166,22 @@ div.campo > input {
     border: 1px solid rgb(255, 255, 255);
 }
 
+input[type="password"] {
+    letter-spacing: 2px;
+}
+
+input[type="password"]::placeholder {
+    letter-spacing: normal;
+}
+
+input[type="password"]:focus {
+    letter-spacing: 2px;
+}
+
+div.campo > input[type=password] {
+    letter-spacing: ;
+}
+
 input::placeholder {
     color: rgb(255, 255, 255);
     font-weight: 200;
