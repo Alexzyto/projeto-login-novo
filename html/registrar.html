@@ -55,7 +55,11 @@
                         <label for="icaixa" id="termo">Eu concordo com os <a id="termos" href="termosecondicoes.html">Termos e Condições</a> </label>
                     </div>
 
-                    <input type="submit" value="Criar Conta">
+                    <p id="mensagem-erro" style="color: red; display: none;">
+                        Por favor, aceite os Termos e Condições.
+                    </p>
+
+                    <input type="submit" value="Criar Conta" id="botaoCriar" disabled>
 
                 </form>
 
@@ -76,3 +80,26 @@
     </main>
 </body>
 </html>
+
+<script>
+    const checkbox = document.getElementById('icaixa');
+    const botao = document.getElementById('botaoCriar');
+    const form = document.getElementById('formulario');
+    const mensagemErro = document.getElementById('mensagem-erro');
+
+    // Ativa/desativa o botão
+    checkbox.addEventListener('change', function () {
+        botao.disabled = !this.checked;
+        if (this.checked) {
+            mensagemErro.style.display = 'none';
+        }
+    });
+
+    // Verifica antes de enviar
+    form.addEventListener('submit', function (e) {
+        if (!checkbox.checked) {
+            e.preventDefault();
+            mensagemErro.style.display = 'block';
+        }
+    });
+</script>
