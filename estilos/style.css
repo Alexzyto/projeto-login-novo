@@ -70,13 +70,13 @@ section#login > div#formulario {
 }
 
 section#login > div#formulario > h1 {
-    font-size: 37px;
-    transform: translateY(-42px);
+    font-size: 33px;
+    transform: translateY(-32px);
 }
 
 p#esqueceusuasenha {
-    transform: translateX(-8px);
-}
+    transform: translateY(-40px);
+        }
 
 section#login > div#formulario > p#jatemconta  {
     font-size: 14px;
@@ -120,6 +120,11 @@ input[type="text"] {
 input:focus {
   outline: none;          /* se quiser remover o contorno azul */
 }
+
+div.campo {
+            transform: translateY(-36px);
+        }   
+        
 div.campo1 > input , div.campo2 > input {
     background-color: #3003633a;
     display: block;
@@ -174,7 +179,7 @@ input::placeholder {
 }
 
 label#termo {
-    font-size: 13px;
+    font-size: 11px;
     color: rgb(203, 206, 209);
     transform: translateX(-47px);
     display: inline;
@@ -272,13 +277,13 @@ a#google {
     float: left; /* Para que os campos fiquem lado a lado */
 }
 
+a#google:hover {
+    transform: translateY(-2px);
+}
+
 a#apple {
     transform: translateX(-52px);
     float: right; /* Para que os campos fiquem lado a lado */
-}
-
-a#google:hover {
-    transform: translateY(-2px);
 }
 
 a#apple:hover {
@@ -287,9 +292,13 @@ a#apple:hover {
 }
 
 a#voltar {
+    position: relative;
+    z-index: 10;
+    display: block;
     color: #c09adb;
     text-decoration: none;
-    font-size: 14px;    
+    font-size: 14px;
+    transform: translateY(-50px); 
 }
 
 a#voltar:hover {

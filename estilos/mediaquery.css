@@ -45,6 +45,10 @@ Grandes Telas: acima de 1200px
         margin-right: 25px;
     }
 
+    div.campo {
+            transform: translateY(0px);
+    }   
+
     div.campo2 > input {
         margin-left: 0px; /* ajuste o valor como preferir */
     }
@@ -78,48 +82,39 @@ Grandes Telas: acima de 1200px
         display: block;
         font-size: 1.2em;
         height: 35px;
-        width: 232px;
-    transform: translateY(-60px);
+        width: 240px;
+        transform: translateY(-60px);
     }
 
     .divider {
         transform: translateY(-60px);
         font-size: 13px;
-        padding-right: 25px;
-        
+        padding-right: 25px;        
     }
 
     .divider::before {
         left: 0;
         transform: translateY(0px);
         padding-left: 40px;
-        width: 5%;
+        width: 6%;
     }
 
     .divider::after {
+        
         right: 0;
         padding-left: 40px;
-        width: 5%;
+        width: 3.5%;
+        transform: translateX(-36px);
     }
-
-    .brand-logo {
-        width: 15px;
-        height: 15px;
-        transform: translateY(0);
-    }
-
-    a#google , a#apple {
-        display: flex;
-        align-items: center;
-        justify-content: center; /* Se quiser centralizar o texto com imagem */
-        gap: 8px; /* Espaço entre logo e texto */
+    
+    a#google , a#apple {        
         transform: translateY(-62px);
         width: 111px;
         height: 32px;
     }
 
     a#apple {
-        margin-left: 10px;
+        margin-left: 20px;
         float: left;
     }
 
@@ -127,32 +122,11 @@ Grandes Telas: acima de 1200px
         transform: translateY(-65px);
     }
     
-    
-    
-
     a#voltar {
         position: relative;
         z-index: 10;
         display: block;
         transform: translateY(-20px);
-        
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    div.campo {
-            transform: translateY(-36px);
-        }
-
-    p#esqueceusuasenha {
-    transform: translateY(-40px);
-        }
-
-    a#voltar {
-        position: relative;
-        z-index: 10;
-        display: block;
-        transform: translateY(-50px);
         
     }
 }
@@ -185,9 +159,12 @@ Grandes Telas: acima de 1200px
         transform: translateY(-42px);
     }
 
+    p#esqueceusuasenha {
+        transform: translateY(-40px);
+            }
+
     section#login > div#formulario > p#jatemconta {
         font-size: 16px;
-        color: rgb(203, 206, 209);
         transform: translateY(-30px);
     }
 
@@ -200,11 +177,6 @@ Grandes Telas: acima de 1200px
     div.campo {
             transform: translateY(-36px);
         }
-
-    p#esqueceusuasenha {
-    transform: translateY(-40px);
-        }
-
     div.campo > input {
         width: 320px;
         height: 40px;
@@ -262,11 +234,7 @@ Grandes Telas: acima de 1200px
         transform: translateY(0);
     }
     
-      a#google , a#apple {
-        display: flex;
-        align-items: center;
-        justify-content: center; /* Se quiser centralizar o texto com imagem */
-        gap: 8px; 
+    a#google , a#apple { 
         width: 155px;
         height: 45px;  
     }
@@ -275,15 +243,8 @@ Grandes Telas: acima de 1200px
         margin-left: 60px;
         float: left;
     }
-    
-    a#google:hover {
-        transform: translateY(-3px); 
-    } 
 
     a#voltar {
-        position: relative;
-        z-index: 10;
-        display: block;
         transform: translateY(-50px);
         
     }
