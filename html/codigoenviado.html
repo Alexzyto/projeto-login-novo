@@ -160,7 +160,7 @@
         <section id="login">
             
             <div id="formulario">
-                <a id="voltar" href="login.html">← Voltar</a>
+                <a id="voltar" href="esqueceusuasenha.html">← Voltar</a>
                 <h1 id="emailsenha">Digite o código enviado</h1>
                 <p id="emailsenha-msg">
                     Um código foi enviado para o email "".
@@ -181,7 +181,8 @@
     <script>
 function encurtarEmail(email, limite) {
     if (email.length > limite) {
-        let [usuario, dominio] = email.split("@");
+        var usuario, dominio;
+        [usuario, dominio] = email.split("@");
         if (usuario.length > limite - dominio.length - 3) {
             usuario = usuario.substring(0, limite - dominio.length - 3) + "...";
         }
@@ -190,17 +191,17 @@ function encurtarEmail(email, limite) {
     return email;
 }
 
-let email = localStorage.getItem("emailRecuperacao");
+var email = localStorage.getItem("emailRecuperacao");
 
 if (email) {
-    let largura = window.innerWidth;
-    let limite = 25; // padrão tablet e desktop
+    var largura = window.innerWidth;
+    var limite = 25; // padrão tablet e desktop
 
     if (largura < 768) { // celular
         limite = 18;
     }
 
-    let emailFormatado = encurtarEmail(email, limite);
+    var emailFormatado = encurtarEmail(email, limite);
     document.getElementById("emailsenha-msg").textContent =
         `Um código foi enviado para o email "${emailFormatado}".`;
 }
