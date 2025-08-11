@@ -166,20 +166,19 @@
             </div>
         </section>
     </main>
-
     <script>
         document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault(); // impede o envio imediato
+        event.preventDefault(); // impede o envio imediato
 
-    var email = document.getElementById("ilogin").value.trim();
+        var email = document.getElementById("ilogin").value.trim();
 
-    if (email) {
-        localStorage.setItem("emailRecuperacao", email); // guarda o email
-        window.location.href = "codigoenviado.html"; // vai para a próxima página
-    } else {
-        alert("Por favor, insira um email válido.");
-    }
-})
+        if (email) {
+            localStorage.setItem("emailRecuperacao", email); // guarda o email
+            window.location.href = "codigoenviado.html"; // vai para a próxima página
+        } else {
+            alert("Por favor, insira um email válido.");
+        }
+        })
     </script>
 </body>
 </html>

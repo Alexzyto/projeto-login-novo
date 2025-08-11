@@ -19,11 +19,11 @@
     margin: 17px;
     margin-top: 0px;
     border-radius: 10px;
-    transform: translateY(-126px);
+    transform: translateY(-100px);
     }
 
     section#login > div#imagem:hover {
-        transform: translateY(-130px);
+        transform: translateY(-105px);
     }
 
     p#emailsenha , p#emailsenha-msg {
@@ -43,17 +43,11 @@
     }
 
     div.campo {
-        transform: translateY(-145px);
-    }
-
-    div.campo > input {
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin-bottom: 14px;
+        transform: translateY(-115px);
     }
 
     form > input[type=submit] {
-    transform: translateY(-140px);
+    transform: translateY(-115px);
     }
 
 @media screen and (max-width: 800px) {
@@ -177,36 +171,33 @@
             </div>
         </section>
     </main>
-
     <script>
-function encurtarEmail(email, limite) {
-    if (email.length > limite) {
-        var usuario, dominio;
-        [usuario, dominio] = email.split("@");
-        if (usuario.length > limite - dominio.length - 3) {
-            usuario = usuario.substring(0, limite - dominio.length - 3) + "...";
+        function encurtarEmail(email, limite) {
+            if (email.length > limite) {
+                var usuario, dominio;
+                [usuario, dominio] = email.split("@");
+                if (usuario.length > limite - dominio.length - 3) {
+                    usuario = usuario.substring(0, limite - dominio.length - 3) + "...";
+                }
+                return usuario + "@" + dominio;
+            }
+            return email;
         }
-        return usuario + "@" + dominio;
-    }
-    return email;
-}
 
-var email = localStorage.getItem("emailRecuperacao");
+        var email = localStorage.getItem("emailRecuperacao");
 
-if (email) {
-    var largura = window.innerWidth;
-    var limite = 25; // padrão tablet e desktop
+        if (email) {
+            var largura = window.innerWidth;
+            var limite = 25; // padrão tablet e desktop
 
-    if (largura < 768) { // celular
-        limite = 18;
-    }
+            if (largura < 768) { // celular
+                limite = 18;
+            }
 
-    var emailFormatado = encurtarEmail(email, limite);
-    document.getElementById("emailsenha-msg").textContent =
-        `Um código foi enviado para o email "${emailFormatado}".`;
-}
-</script>
-</script>
-
+            var emailFormatado = encurtarEmail(email, limite);
+            document.getElementById("emailsenha-msg").textContent =
+                `Um código foi enviado para o email "${emailFormatado}".`;
+        }
+    </script>
 </body>
 </html>
